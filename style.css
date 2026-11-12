@@ -1,0 +1,192 @@
+
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7fc;
+    color: #222;
+}
+
+/* Navbar */
+header {
+    background: #102a43;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* Home */
+.home {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    gap: 40px;
+}
+
+.home-text h3 {
+    color: #1684c7;
+    font-size: 22px;
+}
+
+.home-text h1 {
+    font-size: 45px;
+    margin: 10px 0;
+    color: #102a43;
+}
+
+.home-text h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.home-text p {
+    max-width: 500px;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #1684c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #102a43;
+}
+
+/* Foto */
+.home-img img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #1684c7;
+}
+
+/* Semua Section */
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    color: #102a43;
+    margin-bottom: 25px;
+}
+
+/* About */
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Skill dan Project */
+.skill-container,
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-box,
+.project-box {
+    background: white;
+    padding: 30px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.skill-box:hover,
+.project-box:hover {
+    transform: translateY(-8px);
+}
+
+.skill-box h3,
+.project-box h3 {
+    color: #1684c7;
+    margin-bottom: 15px;
+}
+
+/* Kontak */
+.contact {
+    background: #e3f2fd;
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 35px;
+    }
+
+    .home-img img {
+        width: 200px;
+        height: 200px;
+    }
+}
